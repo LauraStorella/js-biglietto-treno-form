@@ -12,23 +12,34 @@ console.log(passengerKm);
 var passengerAge = document.getElementById('form-eta');
 console.log(passengerAge);
 
+// Altre Variabili
 
-// Tasto GENERA
+
+// Elementi Biglietto
+var biglNome = document.getElementById('ticket-nome');
+
+
+// EVENTI BUTTONS
+// Btn Genera
 var btnGenera = document.getElementById('cta-genera');
 btnGenera.addEventListener('click',
   function() {
     var passengerName = document.getElementById('form-nome').value;
-    alert('test');
+    biglNome.innerHTML = passengerName;
   }
 )
 
+// Btn Annulla
 var btnAnnulla = document.getElementById('cta-annulla');
 btnAnnulla.addEventListener('click',
   function() {
-    var passengerName = document.getElementById('form-nome').value = "";
-    alert('test');
+    var passengerName = document.getElementById('form-nome').value = '';
+    biglNome.innerHTML = passengerName.value = '';
   }
 )
+
+
+
 
 
 // CALCOLO BIGLIETTO

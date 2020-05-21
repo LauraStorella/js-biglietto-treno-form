@@ -16,7 +16,7 @@
 
       <main>
 
-        <section id="anagrafica">
+        <section id="info-anagrafica" class="info">
           <h2 class="text-title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
           <div class="form">
@@ -40,24 +40,24 @@
             </div>
 
             <div class="buttons">
-              <button class="cta cta-genera" type="button" name="button">Genera</button>
-              <button class="cta cta-annulla" type="button" name="button">Annulla</button>
+              <button id="cta-genera" class="cta cta-genera" type="button" name="button">Genera</button>
+              <button id="cta-annulla" class="cta cta-annulla" type="button" name="button">Annulla</button>
             </div>
           </div>
         </section>
 
 
-        <section id="anagrafica">
+        <section id="info-ticket" class="info">
           <h2 class="text-title">IL TUO BIGLIETTO</h2>
 
           <div class="form ticket-preview">
             <h3>DETTAGLIO PASSEGGERI</h3>
             <div class="ticket-details">
-              <span>NOME PASSEGGERO <span id=""></span> </span>
-              <span>Offerta <span id=""></span> </span>
-              <span>Carrozza <span id=""></span> </span>
-              <span>Codice CP <span id=""></span> </span>
-              <span>Costo biglietto <span id=""></span> </span>
+              <div>NOME PASSEGGERO <span id="ticket-nome"></span> </div>
+              <div>Offerta <span id="ticket-offerta"></span> </div>
+              <div>Carrozza <span id="ticket-carrozza"></span> </div>
+              <div>Codice CP <span id="ticket-codice"></span> </div>
+              <div>Costo biglietto <span id="ticket-price"></span> </div>
             </div>
           </div>
         </section>
@@ -73,7 +73,7 @@
 
 
 
-    
+
 
     <!-- <div class="ticket">
       <h3>Dati Ticket Passeggero</h3>
