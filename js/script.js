@@ -22,14 +22,17 @@ btnGenera.addEventListener('click',
     // Elabora elementi Biglietto
     formNomeValue = formNome.value;
     biglNome.innerHTML = formNomeValue;
-    biglCosto.innerHTML = prezzo + ' Euro';
+    biglCosto.innerHTML = prezzo.fixedTo(2) + ' Euro';
     // Elabora Km
     formKmValue = formKm.value;
+    console.log(formKmValue);
     // Elabora eta
     formEtaValue = formEta.value;
+    console.log(formEtaValue);
 
     // Calcolo prezzo
     var prezzo = formKmValue * 0.21;
+    console.log(prezzo);
 
     // Calcolo sconti
     if (formEtaValue == 'min') {
