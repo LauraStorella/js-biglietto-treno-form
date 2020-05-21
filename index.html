@@ -15,23 +15,23 @@
     <div class="main-wrapper">
 
       <main>
-
+        <!-- Sezione info form -->
         <section id="info-anagrafica" class="info">
           <h2 class="text-title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
-          <div class="form">
-            <div class="form-data">
-              <label for="">Nome Cognome</label>
+          <div class="form form-anagrafica">
+            <div class="form-data nome">
+              <div><label>Nome Cognome</label></div>
               <input id="form-nome" type="text" name="" value="" placeholder="Inserisci il tuo Nome">
             </div>
 
-            <div class="form-data">
-              <label for="">Km da percorrere</label>
-              <input id="form-tratta" type="text" name="" value="" placeholder="Inserisci i Km">
+            <div class="form-data km">
+              <div><label>Km da percorrere</label></div>
+              <input id="form-tratta" type="number" name="" value="" placeholder="Inserisci i Km">
             </div>
 
-            <div class="form-data">
-              <label for=""Fascia di età></label>
+            <div class="form-data eta">
+              <div><label>Fascia di età</label></div>
               <select id="form-eta" name="">
                 <option value="min">Minorenne</option>
                 <option value="mag">Maggiorenne</option>
@@ -40,79 +40,54 @@
             </div>
 
             <div class="buttons">
-              <button id="cta-genera" class="cta cta-genera" type="button" name="button">Genera</button>
-              <button id="cta-annulla" class="cta cta-annulla" type="button" name="button">Annulla</button>
+              <button id="form-genera" class="cta form-genera" type="button" name="button">Genera</button>
+              <button id="form-annulla" class="cta form-annulla" type="button" name="button">Annulla</button>
             </div>
           </div>
         </section>
 
-
+        <!-- Sezione anteprima biglietto -->
         <section id="info-ticket" class="info">
           <h2 class="text-title">IL TUO BIGLIETTO</h2>
 
-          <div class="form ticket-preview">
-            <h3>DETTAGLIO PASSEGGERI</h3>
+          <div id="ticket-preview" class="form">
+            <h3>DETTAGLIO PASSEGGERO</h3>
             <div class="ticket-details">
-              <div>NOME PASSEGGERO <span id="ticket-nome"></span> </div>
+              <div class="pass-id">NOME PASSEGGERO <span id="ticket-nome"></span> </div>
               <div>Offerta <span id="ticket-offerta"></span> </div>
               <div>Carrozza <span id="ticket-carrozza"></span> </div>
               <div>Codice CP <span id="ticket-codice"></span> </div>
-              <div>Costo biglietto <span id="ticket-price"></span> </div>
+              <div>Costo biglietto <span id="ticket-costo"></span> </div>
             </div>
           </div>
         </section>
 
+        <!-- Sezione stampa biglietto -->
+        <section>
+          <div class="print">
+            <button class="cta btn-print" type="button" name="button">Stampa biglietto</button>
+          </div>
 
+          <div id="ticket-print" class="form form-print">
+            <h3>DETTAGLIO PASSEGGERO</h3>
+            <div class="print-voucher">
+              <div id="pass-id">NOME PASSEGGERO <span id="ticket-nome"></span> </div>
+              <div>Offerta <span id="ticket-offerta"></span> </div>
+              <div>Carrozza <span id="ticket-carrozza"></span> </div>
+              <div>Codice CP <span id="ticket-codice"></span> </div>
+              <div>Costo biglietto <span id="ticket-costo"></span> </div>
+              <div class="logo">
+                <img src="img/boolean-logo.png" alt="company-logo"> <span class="rail">Railway</span>
+              </div>
 
-
+              <div class="code">
+                <img src="img/qrcode.png" alt="qr-code">
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-
     </div>
-
-
-
-
-
-
-
-    <!-- <div class="ticket">
-      <h3>Dati Ticket Passeggero</h3>
-
-      <div class="dati-passeggero"><i class="fas fa-subway"></i>
-        <span id="tratta"></span>
-      </div>
-
-      <div class="dati-passeggero"><i class="far fa-calendar-alt"></i>
-        <span id="eta"></span>
-      </div>
-
-      <div class="dati-passeggero"><i class="fas fa-tag"></i>
-        <span id="prezzo-pieno"></span>
-      </div>
-
-      <div class="dati-passeggero"><i class="fas fa-percentage"></i>
-        <span id="sconto20"></span>
-      </div>
-
-      <div class="dati-passeggero"><i class="fas fa-percentage"></i>
-        <span id="sconto40"></span>
-      </div>
-
-      <div class="dati-passeggero"><i class="fas fa-tag"></i>
-        <span id="no-sconto"></span>
-      </div>
-
-      <div class="code"><i class="fas fa-qrcode"></i>
-        <span id="qr-code"></span>
-      </div>
-
-      <div class="logo">
-        <img src="img/boolean-logo.png" alt=""><span class="rail">Railway</span>
-      </div>
-
-    </div> -->
-
-
 
     <script type="text/javascript" src="js/script.js"></script>
 

@@ -15,60 +15,104 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
+.form.form-anagrafica {
+  height: 200px;
+  text-align: center;
+}
 .form .form-data {
   display: inline-block;
 }
-
-.cta {
+.form label {
+  color: #b91750;
+}
+.form input, select {
+  padding: 3px;
+  border-color: #c53f6e;
+  border-radius: 5px;
+}
+.form input:focus,
+.form select:focus {
+  background-color: #b91750;
+  color: white;
+}
+.form .form-data.km {
+  margin: 0 50px;
+}
+.form .cta,
+.print .cta {
   color: #b91750;
   border-radius: 5px;
   padding: 5px 10px;
+  font-weight: bold;
+  margin: 50px 0;
+}
+.print {
+  text-align: center;
 }
 
 
+#info-ticket {
+  display: block;
+}
 
-/* .ticket {
-  width: 650px;
+.hidden {
+  display: none;
+}
+
+.ticket-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid gray;
+  height: 200px;
+}
+.ticket-details > div {
+  font-weight: bold;
+}
+.pass-id {
+  background-color: gray;
+}
+
+#ticket-print {
+  width: 900px;
   height: 300px;
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 30px;
+  margin-bottom: 100px;
+}
+
+.form-print {
+  padding-top: 55px;
+}
+.form-print h3 {
+  padding-bottom: 15px;
+}
+.print-voucher {
   position: relative;
 }
-
-h3 {
-  margin-bottom: 15px;
+.print-voucher > div {
+  padding-bottom: 5px;
 }
 
-.dati-passeggero {
-  margin-bottom: 10px;
-}
-
-i {
-  margin-right: 5px;
-}
-
-.code {
+.code img {
+  width: 10%;
   position: absolute;
-  right: 15px;
-  bottom: 15px;
-  font-size: 50px;
+  right: 10px;
+  bottom: -65px;
 }
-
 .logo {
   position: absolute;
-  top: 15px;
+  top: -75px;
   right: 15px;
   width: 15%;
 }
-
 .logo .rail {
   font-style: italic;
   font-weight: bold;
-} */
+}
 
 
+
+
+/* ========== GENERAL RULES ========== */
 /* DEBUGG - start rules*/
 /* debug {}
   .debug .container {
