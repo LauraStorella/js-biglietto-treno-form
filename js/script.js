@@ -22,7 +22,7 @@ btnGenera.addEventListener('click',
     // Elabora elementi Biglietto
     formNomeValue = formNome.value;
     biglNome.innerHTML = formNomeValue;
-    biglCosto.innerHTML = prezzo.fixedTo(2) + ' Euro';
+    biglCosto.innerHTML = prezzo.toFixed(2) + ' Euro';
     // Elabora Km
     formKmValue = formKm.value;
     console.log(formKmValue);
@@ -69,14 +69,14 @@ var biglNome = document.getElementById('ticket-nome');
 var biglCosto = document.getElementById('ticket-costo');
 
 
-//ELEMENTI PRINTABLE TICKET
-var btnPrint= document.getElementById('btn-print');
-btnPrint.addEventListener('click',
-  function() {
-
-    // Hide / change ticket name
-    var printName = document.getElementById('pass-id');
-    printName.className = 'hidden';
-
-  }
-)
+// //ELEMENTI PRINTABLE TICKET
+// var btnPrint= document.getElementById('btn-print');
+// btnPrint.addEventListener('click',
+//   function() {
+//
+//     // Hide / change ticket name
+//     var printName = document.getElementById('pass-id');
+//     printName.className = 'hidden';
+//
+//   }
+// )
