@@ -2,7 +2,7 @@
 // Dati passeggero
 var formNome = document.getElementById('form-nome');  //Nome
 var formKm = document.getElementById('form-tratta'); //Km
-var formEta = document.getElementById('form-eta'); //Km
+var formEta = document.getElementById('form-eta');  //Eta
 
 // Buttons
 var btnGenera = document.getElementById('form-genera');
@@ -13,6 +13,12 @@ var btnAnnulla = document.getElementById('form-annulla');
 var formNomeValue;
 var formKmValue;
 var formEtaValue;
+
+
+// ELEMENTI BIGLIETTO
+var biglNome = document.getElementById('ticket-nome');
+var biglCosto = document.getElementById('ticket-costo');
+
 
 // EVENTI BUTTONS
 // BTN GENERA
@@ -40,6 +46,7 @@ btnGenera.addEventListener('click',
     } else if (formEtaValue == 'over') {
       prezzo = prezzo - (prezzo * 40 / 100);
     }
+
   }
 )
 
@@ -64,9 +71,14 @@ btnAnnulla.addEventListener('click',
 )
 
 
-// ELEMENTI BIGLIETTO
-var biglNome = document.getElementById('ticket-nome');
-var biglCosto = document.getElementById('ticket-costo');
+
+
+
+
+
+
+
+
 
 
 // //ELEMENTI PRINTABLE TICKET
